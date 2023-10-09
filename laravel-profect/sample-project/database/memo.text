@@ -1,0 +1,19 @@
+//ファイルの場所とファイル名
+database/migration
+2024_10_12_000000_create_users_table.php
+生成時間_アクション名_テーブル名
+
+//ファイルの生成
+php artisan make:migration create_users_table
+//カラム追加
+add_カラム名_to_users_table
+
+//実行コマンド
+php artisantisan migrate : すべてのファイルを実行
+
+//マイグレーションの中身
+//upとdownメソッド
+//upが実行（作成）
+・Schema::cretae テーブル作成
+・$table->string('name') 名前カラムを作成
+//downが元に戻す(削除)
